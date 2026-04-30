@@ -1,0 +1,20 @@
+#Exemplo 4 
+print("Calculadora com condições")
+print("Escolha como quer calcular")
+print("1 = Soma")
+print("2 = subtração")
+print("3 = Mulplicação")
+print("4 = Divisão")
+calculadora = float(input("Digite sua opção para calcular \n"))
+if calculadora == 1:
+    print("1 = Você escolheu soma")
+    soma1 = int (input("Digite o primeiro valor \n"))
+    soma2 = int (input("Digite o segundo valor \n "))
+    print (soma1+soma2)
+elif calculadora == 2: 
+   print ("2 = Você escolheu subtração")
+   sub1 = int(input("Digite o primeiro valor \n"))
+   sub2 = int(input("Digite o primeiro valor \n"))
+   print("A subtraçaõ foi :", sub1 - sub2 )
+   print ("Você não escolheu nehnuma opção")
+   print ("Sair do programa")

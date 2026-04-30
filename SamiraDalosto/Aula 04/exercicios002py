@@ -1,0 +1,17 @@
+#Exercicios 2
+#Criar um algoritimo para demostrar a sinalização de um semaforo
+print("Sinalização do semaforo")
+print("1 - vermelho")
+print("2 - amarelo")
+print("3 - verde")
+cores = int(input("escolha a cor desejada: \n "))
+
+if cores == 1:
+    print (" vermelha")
+elif cores == 2:
+    print("verde")
+elif cores == 3:
+    print("amarelo")
+else:
+    print("Somente essas cores!")
+

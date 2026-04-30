@@ -1,0 +1,27 @@
+print("Bem vindo ao Meu Shoopping da Samira ")
+print("1 - acesso com o ticket")
+print("2 - acesso por TAG")
+forma_acesso = input("Digite a forma de acesso - TAG ou Ticket? \n")
+ct = ("Cancela está com problema")
+pt = ("Perdeu o ticket")
+if forma_acesso == "Ticket":  
+    print("Imprimir o ticket")
+
+    he = int(input("Horario de entrada, \n"))
+    hs = int(input("Horario de saída, \n"))
+    tempo = hs - he
+    print("A contagem de horas foi", hs - he )
+    print( tempo * 10)
+    print("Total a pagar \n",tempo * 10)
+    print("Devolver o ticket na saída")
+    print("Liberar e fechar a cancela")
+elif pt == "perdeu o ticket":
+    pt = ("Perdeu o ticket")
+    print(input("perdeu o ticket? \n"))
+    print("procurar informações da placa ")
+    print(str(input("nome")))
+    print(str(input("placa do carro")))
+    print(str(input("CPF")))
+    print(str("informações concluídas"))
+    print("Pagar ,ulta de 50 reais")
+    print("Tenha uma boa viagem, até logo")
