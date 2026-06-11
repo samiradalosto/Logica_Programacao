@@ -1,2 +1,0 @@
-#Exercicios
-print("Samira"+" "+"Dalosto")

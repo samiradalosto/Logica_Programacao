@@ -35,3 +35,52 @@ if num1 > 100:
                 print(f"Ocorreu um erro inesperado: {e}")
             else:
                 print("O número digitado é menor ou igual a 100.")
+
+#-------------------------------------------------------------------------------------------------#
+
+#exercicio 1:
+#Ercreva um programa que solicite ao usuario um número inteiro e calcule a média de uma lista de números 
+#Oprograma deve tratar os seguintes erros:
+#- ValueError:se o usuário digitar um valor que não seja um número interrior .
+
+try:
+    n1 = int(input('digite sua primeira nota \n'))
+    n2 = int(input('Digite sua segunda  nota \n'))
+    n3 = int (input('digite sua terceira nota \n'))
+    s2 =(n1 + n2 + n3  )/3
+    print("O resultado do calculo é: \n", s2)
+except ValueError:
+    print("Error:Entrada inválida. por favor, digite um número inteiro.") 
+#---------------------------------------------------#
+#Exercicios 2:
+#Escreva um programa que solicite ao usuário uma lista de palavras e conte quantas vezes cada palavra aparece na lista 
+#O programa deve tratar os seguinte erros:
+# - valueError: se o usuário digitar um valor que não seja um string
+# try:
+
+#     for i in range(5):
+#         lista = 0 
+#         entrada = input(f"Digite {i+1}° palavra, \n")
+
+# except ValueError:
+#     print("ValueError: Você digitou aluguma palavra errada.")
+try:
+    palavras = input("Digite uma lista de palavras separadas por espaço, \n").split()
+    contagem = {}
+    for palavra in palavras:
+        if palavra in contagem:
+             contagem[palavra] += 1 
+        else:
+            contagem[palavra] = 1 
+    print("Contagem de palavra:")
+    for palavra, contagem in contagem.items():
+        print(f"{palavra}: {contagem}")
+except ValueError:
+    print("Error: Entrada invalida. por favor, digite uma lista de palavras separadas posr espaço")
+
+#---------------------------------------------------------#
+#Exercicio 3:
+# Escrever um programa mais simples com testes de tratamento de erros
+# como exemplo, solicitar ao usuario um número. O programa deve tratar os seguintes erros 
+# - Valuerror:se o usuário digitar um valor que não seja um número.
+# - ZeroDivisionError: se o usuário digitar zero como divisor.
